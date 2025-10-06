@@ -1,6 +1,6 @@
 class PersonalDetails{
     public String name;
-    public int age;
+    private int age;
     private String Email;
     private long  mobileNo;
 

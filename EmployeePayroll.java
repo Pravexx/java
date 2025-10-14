@@ -42,6 +42,10 @@ class  Developer extends employee{
         super(name, salary);
         this.bonus = bonus;
     }
+
+    public Developer(String name, double salary) {
+        super(name, salary);
+    }
     public void EmployeeBonus(){
         System.out.println("Employee name : " + getname());
         System.out.println("Employee salary :" + getSalary());

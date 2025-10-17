@@ -22,19 +22,19 @@ class Account{
     }
     public void Deposit(double amount){
         Balance += amount;
-        System.out.println("Deposit Amount : " + amount + "New Balance : " + Balance);
+        System.out.println("Deposit Amount : " + amount + "\nNew Balance : " + Balance );
     }
 
     public void Withdraw(double amount){
         if(amount<=Balance){
             Balance -= amount;
-            System.out.println("Withdraw amount : " + amount + "New Balance : " + Balance);
+            System.out.println("Withdraw amount : " + amount + "\nNew Balance : " + Balance);
         }else{
             System.out.println("Insufficient Balance");
         }
     }
     public void AccDetails(){
-        System.out.println("Account Number : " + AccNumber);
+        System.out.println("\nAccount Number : " + AccNumber);
         System.out.println("holder Name : " + HolderName);
         System.out.println("Account Balance : " + Balance);
     }
@@ -47,7 +47,8 @@ class SavingsAccount extends Account{
     }
     public void addInterest(){
         double interest = Balance * (interestRate/100);
-        System.out.println("Interest Amount : " + interest + "New Balance : " + Balance);
+        Balance += interest;
+        System.out.println("Interest Amount : " + interest + "\nNew Balance : " + Balance);
     }
 }
 class CurrentAccount extends Account{
@@ -58,7 +59,7 @@ class CurrentAccount extends Account{
     public void withdraw(double amount){
         if(amount <= Balance+overdraftLimit){
             Balance -= amount;
-            System.out.println("Withdraw Amount : " + amount + "New Balance : " + Balance);
+            System.out.println("Withdraw Amount : " + amount + "\nNew Balance : " + Balance);
         }else{
             System.out.println("Insufficient Balance");
         }
@@ -84,9 +85,9 @@ public class BankSys1 {
         CurrentAccount c1 = new CurrentAccount("CBOI3400012", "Giri",15000);
         JointAccount j1 = new JointAccount("JBOI0015600021","Ganesh","Giri", 30000);
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to the bank Management System");
+        System.out.println("\nWelcome to the bank Management System");
         while(true){
-            System.out.println("Choose Your Account Type");
+            System.out.println("\n Choose Your Account Type");
             System.out.println("1. Savings Account");
             System.out.println("2. Current Account");
             System.out.println("3. Joint Account");
@@ -96,9 +97,9 @@ public class BankSys1 {
 
             switch(choice){
                 case 1 :
-                System.out.println("---Savings Account---");
+                System.out.println("---Savings Account---\n");
                 s1.AccDetails();
-                System.out.println("1. Deposit  2. Withdraw  3. Add Interest");
+                System.out.println("1. Deposit  2. Withdraw  3. Add Interest \n");
                 System.out.print("Enter Choice : ");
                 int sc1 = sc.nextInt();
                 if(sc1 == 1){
@@ -134,10 +135,10 @@ public class BankSys1 {
                 System.out.println("---Joint Account---");
                 j1.AccDetails();
                 System.out.println("1. Deposit  2. Withdraw ");
-                System.out.print("Enter choice");
+                System.out.print("Enter choice : ");
                 int sc3 = sc.nextInt();
                 if(sc3 == 1){
-                    System.out.print("Enter Amount");
+                    System.out.print("Enter Amount : ");
                     j1.Deposit(sc.nextDouble());
                 }
                 else if(sc3 == 2){
@@ -150,6 +151,9 @@ public class BankSys1 {
                 System.out.println("Thank you for Using bank System");
                 sc.close();
                 return;
+
+                default:
+                System.out.println("Invalid choice! Try again");
             }
         }
     }

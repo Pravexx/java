@@ -72,7 +72,7 @@ class CurrentAccount extends Account {
         } else {
             System.out.println("⚠️ Overdraft limit exceeded!");
         }
-    }3
+    }
 
 }
 
@@ -95,7 +95,7 @@ class JointAccount extends Account {
 }
 
 // 🔹 Main Class
-public class BankSystem {
+public class BankSystem {   
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -151,10 +151,10 @@ public class BankSystem {
                     System.out.println("1. Deposit  2. Withdraw");
                     int c3 = sc.nextInt();
                     if (c3 == 1) {
-                        System.out.print("Enter amount: ");
+                        System.out.print("Enter amount : ");
                         ja.deposit(sc.nextDouble());
                     } else if (c3 == 2) {
-                        System.out.print("Enter amount: ");
+                        System.out.print("Enter amount : ");
                         ja.withdraw(sc.nextDouble());
                     }
                     break;

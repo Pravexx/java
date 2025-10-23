@@ -9,15 +9,50 @@
 //     }
 // }
 
-public  class loops{
+// public  class loops{
+//     public static void main(String[] args) {
+//         String name = "kamatchi";
+//         int count = 0;
+//         for(int i=0; i<=name.length()-1;i++){
+//             if('a'==name.charAt(i)){
+//                 count++;
+//             }
+//         }
+//         System.out.println(count);
+//     }
+// }
+
+
+
+// find min and max value in array
+// public class loops{
+//     public static void main(String[] args) {
+//         int[] arr = {24,76,78,43,900};
+//         int max = arr[0];
+//         int min = arr[0];
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]>max){
+//                 max = arr[i];
+//             }
+//             if(arr[i]<min){
+//                 min = arr[i];
+//             }
+//         }
+//         System.out.println(max);
+//         System.out.println(min);
+//     }
+// }
+
+
+
+// find sum of an array
+public class loops{
     public static void main(String[] args) {
-        String name = "kamatchi";
-        int count = 0;
-        for(int i=0; i<=name.length()-1;i++){
-            if('a'==name.charAt(i)){
-                count++;
-            }
+        int[] arr = {24,76,78,43,900};
+        int sum = 0;
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
         }
-        System.out.println(count);
+        System.out.println(sum);
     }
 }

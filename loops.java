@@ -138,23 +138,56 @@
 
 
 // Print all prime numbers between 1 to N
-import  java.util.Scanner;
+// import  java.util.Scanner;
+// public class loops{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter N = ");
+//         int N = sc.nextInt();
+//         for(int i = 2; i <= N;i++){
+//             boolean isPrime = true;
+//             for(int num = 2; num<=Math.sqrt(i);num++){
+//                 if(i%num == 0){
+//                     isPrime = false;
+//                     break;
+//                 }
+//             }
+//             if(isPrime){
+//                 System.out.print(i + " ");
+//             }
+//         }
+//     }
+// }
+
+
+// Print a diamond star pattern using only for loops.
+
+// public class loops{
+//     public static void main(String[] args) {
+//         int n = 5;
+//         for(int i=1;i<=n;i++){
+//             for(int s=0;s<n-i;s++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=0;j<2*i-1;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         for(int i=n-1;i>0;i--){
+//             for(int s=0;s<n-i;s++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=0;j<2*i-1;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Generate Fibonacci series up to 100 without recursion.
+
 public class loops{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter N = ");
-        int N = sc.nextInt();
-        for(int i = 2; i <= N;i++){
-            boolean isPrime = true;
-            for(int num = 2; num<=Math.sqrt(i);num++){
-                if(i%num == 0){
-                    isPrime = false;
-                    break;
-                }
-            }
-            if(isPrime){
-                System.out.print(i + " ");
-            }
-        }
-    }
+
 }

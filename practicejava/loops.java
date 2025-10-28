@@ -1,4 +1,4 @@
-// public class loops {
+package practicejava;// public class practicejava.loops {
 //     public static void main(String[] args) {
 //         String name = "praveen";
 //         String rev = "";
@@ -9,7 +9,7 @@
 //     }
 // }
 
-// public  class loops{
+// public  class practicejava.loops{
 //     public static void main(String[] args) {
 //         String name = "kamatchi";
 //         int count = 0;
@@ -25,7 +25,7 @@
 
 
 // find min and max value in array
-// public class loops{
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         int[] arr = {24,76,78,43,900};
 //         int max = arr[0];
@@ -46,7 +46,7 @@
 
 
 // find sum of an array
-// public class loops{
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         int[] arr = {24,76,78,43,900};
 //         int sum = 0;
@@ -61,7 +61,7 @@
 
 // 2	Print even and odd numbers between 1–50	Loop + condition
 
-// public class loops{
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         for(int i = 1 ; i <= 50 ; i++){
 //             if(i%2 != 0){
@@ -76,7 +76,7 @@
 
 // Reverse a number	while + % operator
 // import java.util.Scanner;
-// public class  loops{
+// public class  practicejava.loops{
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter Number : ");
@@ -96,7 +96,7 @@
 // Check if number is palindrome
 // import java.util.Scanner;
 
-// public class loops{
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter Your Number : ");
@@ -116,7 +116,9 @@
 //     }
 // }
 
-// public class loops{
+
+//Print all Armstrong numbers between 1 to 10000.
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         for(int i=1;i<=10000;i++){
 //             int num = i;
@@ -139,7 +141,7 @@
 
 // Print all prime numbers between 1 to N
 // import  java.util.Scanner;
-// public class loops{
+// public class practicejava.loops{
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter N = ");
@@ -160,9 +162,9 @@
 // }
 
 
-// Print a diamond star pattern using only for loops.
+// Print a diamond star pattern using only for practicejava.loops.
 
-// public class loops{
+// public class loops {
 //     public static void main(String[] args) {
 //         int n = 5;
 //         for(int i=1;i<=n;i++){
@@ -186,8 +188,26 @@
 //     }
 // }
 
-// Generate Fibonacci series up to 100 without recursion.
 
-public class loops{
 
-}
+//Count frequency of each character in a string without using collections.
+
+//public class loops{
+//    public static void main(String[] args) {
+//        StringBuilder name = new StringBuilder("kamatchi Sundharam");
+//
+//        for(int i = 0;i<name.length();i++){
+//            int frequen = 1;
+//            if(name.charAt(i) == '0' || name.charAt(i) == ' '){
+//                continue;
+//            }
+//            for(int j = 1+i ;j<name.length();j++){
+//                if(name.charAt(i) == name.charAt(j)){
+//                    frequen++;
+//                    name.setCharAt(j,'0');
+//                }
+//            }
+//            System.out.println(name.charAt(i) + " --> " + frequen);
+//        }
+//    }
+//}
